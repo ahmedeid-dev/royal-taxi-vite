@@ -32,7 +32,7 @@ export default function Signup() {
         <div className="flex justify-center items-center min-h-screen">
             <div className="flex shadow-lg">
                 {/* Left Section */}
-                <div className="flex flex-col items-center w-full justify-between bg-[#0D2D56] text-white p-10 max-w-md rounded-l-md">
+                <div className="hidden md:flex flex-col items-center w-full justify-between bg-[#0D2D56] text-white p-10 rounded-l-md">
                     <h1 className="text-4xl font-semibold text-gray-400">Royal Taxi</h1>
                     <p className="text-center text-lg leading-relaxed">
                         Passion drives amateurs. <br />
@@ -43,7 +43,7 @@ export default function Signup() {
                 </div>
 
                 {/* Right Section */}
-                <form onSubmit={(e) => { handleSubmit(e) }} className="bg-[#121E2E] text-white p-10 rounded-r-md w-full max-w-md flex flex-col gap-6">
+                <form onSubmit={(e) => handleSubmit(e)} className="bg-[#121E2E] text-white p-10 rounded-r-md w-full flex flex-col gap-6">
                     <h2 className="text-2xl font-semibold">Account Registration</h2>
                     {error && <p className="text-red-500 text-center rounded-md p-2">{error}</p>}
                     <label htmlFor="email" className="text-sm">Email Address</label>

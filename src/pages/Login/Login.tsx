@@ -35,9 +35,9 @@ export default function Login() {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="flex shadow-lg">
+      <div className="flex shaddow-lg w-full">
         {/* Left Section */}
-        <div className="flex flex-col items-center w-full justify-between bg-[#0D2D56] text-white p-10 max-w-md rounded-l-md">
+        <div className="hidden md:flex flex-col items-center w-full justify-between bg-[#0D2D56] text-white p-10 max-w-md rounded-l-md">
           <h1 className="text-4xl font-semibold text-gray-400">Royal Taxi</h1>
           <p className="text-center text-lg leading-relaxed">
             Passion drives amateurs. <br />
